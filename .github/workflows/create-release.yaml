@@ -1,0 +1,13 @@
+name: create-release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  create-release:
+    uses: ptonini-actions/workflows/.github/workflows/create-release.yaml@main
